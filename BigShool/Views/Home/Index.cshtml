@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BigShool.Models.Course>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @item.Dateime.ToString("dd/MM/yyyy HH:mm") - @item.Name
+            </li>
+        }
+    </ul>
+</div>
