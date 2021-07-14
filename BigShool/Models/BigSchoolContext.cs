@@ -8,10 +8,11 @@ namespace BigShool.Models
     public partial class BigSchoolContext : DbContext
     {
         public BigSchoolContext()
-            : base("name=BigSchoolContext")
+            : base("name=BigSchoolContext1")
         {
         }
 
+        public virtual DbSet<Attendance> Attendances { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
 
@@ -21,6 +22,9 @@ namespace BigShool.Models
                 .HasMany(e => e.Courses)
                 .WithRequired(e => e.Category)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Course>();
+
         }
     }
 }
