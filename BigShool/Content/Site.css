@@ -26,6 +26,12 @@ textarea {
     background-color: #0607b5;
     border-color: #0b0b0b;
 }
+.navbar-inverse .navbar-nav > li > a {
+    color: #fdfdfd;
+}
+.navbar-inverse .navbar-brand {
+    color: #f5f5f5;
+}
 .course{
     list-style: none;
 }
@@ -35,7 +41,7 @@ textarea {
 }
 .course >li .date{
     text-align:center;
-    background-color:#d41d50;
+    background-color:#f30303;
     color:white;
     width:60px;
     border-radius:8px;
